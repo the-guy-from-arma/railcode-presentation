@@ -470,3 +470,292 @@ No private account records, deployment addresses, project/environment/container 
 ---
 
 **Thunder Buddies Studios · RailCode presentation · Documentation snapshot, 26 September 2026**
+
+
+---
+
+## Fresh fleet audit — September 26–27, 2026
+
+Live engineering tests through ThunderLink, with original failures retained. No media generation or training was performed.
+
+Started 2026-09-27T02:24:13.321Z; finished 2026-09-27T03:16:43.279Z.
+
+| ThunderLink model | Score /100 | Result | Closed checks correct | Completed attempts | Median seconds | P95 seconds |
+|---|---:|---|---:|---:|---:|---:|
+| Downburst 0.5 | 67.7 | FAIL | 15/22 | 24/24 | 61.53 | 93.16 |
+| Thunder 2.0 | Not scored | UNAVAILABLE | 0/2 | 0/2 | 4.06 | 4.62 |
+| Hurricane 2.0 | Not scored | UNAVAILABLE | 0/2 | 0/2 | 2.64 | 3.26 |
+| Tornado 2.0 | 53.1 | FAIL | 10/22 | 24/24 | 26.67 | 46.32 |
+| Lightning 2.0 | Not scored | UNAVAILABLE | 0/2 | 0/2 | 1.41 | 2.34 |
+| Blizzard 2.0 | Not scored | UNAVAILABLE | 0/2 | 0/2 | 0.39 | 0.45 |
+| Avalanche 2.0 | 66.6 | FAIL | 14/22 | 24/24 | 30.35 | 63.86 |
+| Cyclone 2.0 | 53.5 | FAIL | 10/22 | 24/24 | 20.86 | 42.98 |
+| Tsunami 2.0 | Not scored | UNAVAILABLE | 0/2 | 0/2 | 0.54 | 0.72 |
+| Tremor 2.0 | 52.3 | FAIL | 7/22 | 24/24 | 4.56 | 9.70 |
+| Monsoon 2.0 | 57.9 | FAIL | 11/22 | 24/24 | 17.85 | 37.15 |
+| Typhoon 2.0 | Not scored | UNAVAILABLE | 0/2 | 0/2 | 0.44 | 0.50 |
+| Hailstorm 2.0 | Not scored | UNAVAILABLE | 0/2 | 0/2 | 0.44 | 0.48 |
+| Wildfire 2.0 | 69.8 | FAIL | 15/22 | 24/24 | 30.20 | 61.55 |
+| Earthquake 2.0 | 48.1 | FAIL | 9/21 | 18/21 | 82.14 | 120.01 |
+| Tempest 2.0 | 55.5 | FAIL | 8/22 | 24/24 | 4.59 | 11.29 |
+| Supercell 2.0 | Not scored | UNAVAILABLE | 0/2 | 0/2 | 0.42 | 0.46 |
+| Maelstrom 2.0 | Not scored | UNAVAILABLE | 0/2 | 0/2 | 0.44 | 0.48 |
+| Volcano 2.0 | 58.1 | FAIL | 12/21 | 18/21 | 84.38 | 120.01 |
+| Storm Surge 2.0 | 54.8 | FAIL | 11/21 | 18/21 | 87.23 | 120.01 |
+| Thunderstorm 2.0 | Not scored | UNAVAILABLE | 0/2 | 0/2 | 0.55 | 0.67 |
+| Firestorm 2.0 | Not scored | UNAVAILABLE | 0/2 | 0/2 | 0.47 | 0.52 |
+| Sandstorm 2.0 | Not scored | UNAVAILABLE | 0/2 | 0/2 | 0.47 | 0.51 |
+| Landslide 2.0 | Not scored | UNAVAILABLE | 0/2 | 0/2 | 0.47 | 0.50 |
+| Waterspout 2.0 | Not scored | UNAVAILABLE | 0/2 | 0/2 | 0.48 | 0.53 |
+| Whiteout 2.0 | 72.2 | FAIL | 16/22 | 24/24 | 34.77 | 68.30 |
+| Sinkhole 1.0 | Not scored | UNAVAILABLE | 0/2 | 0/2 | 0.53 | 0.65 |
+| Derecho 1.0 | Not scored | UNAVAILABLE | 0/2 | 0/2 | 0.46 | 0.51 |
+| Ice Storm 1.0 | Not scored | UNAVAILABLE | 0/2 | 0/2 | 0.46 | 0.51 |
+| Cataclysm 1.0 | Not scored | UNAVAILABLE | 0/1 | 0/1 | 0.14 | 0.14 |
+| Lahar 1.0 | Not scored | UNAVAILABLE | 0/1 | 0/1 | 0.12 | 0.12 |
+| Dust Devil 0.5 | Not scored | UNAVAILABLE | 0/0 | 0/0 | Unavailable | Unavailable |
+| ThunderLink Auto 1.0 | Not scored | UNAVAILABLE | 0/0 | 0/0 | Unavailable | Unavailable |
+
+[Interactive audit, every prompt and resource chart](https://thunderlink-archive-prelaunch.up.railway.app/fleet.html) · [Live testing journal](https://ai.thunderlink.online/testing/fleet.html)
+
+### Methods and limits
+
+# Fleet audit protocol — September 26, 2026 (US Eastern)
+
+24 synthetic prompts per reachable text model: light and harder deterministic math, code tracing, language, grounded extraction, instruction adherence, multi-turn revision, missing information, fictional legal source boundaries, research and supportive conversation. These are an engineering screen, not a comprehensive standardized capability benchmark or legal qualification.
+
+22 closed-answer prompts receive independently reproducible strict correctness/format checks. The two open-answer prompts require manual review and are reported separately. Quality is the percentage of attempted closed-answer prompts correct; failed attempts count as incorrect. Overall score /100 = 70 × closed-answer correctness + 20 × completed attempts/all attempts + 10 × completed attempts finishing within 15 seconds/all attempts. Do not score models with fewer than 20 attempted closed-answer prompts: report insufficient coverage. Pass requires overall >=80, all four truthfulness checks correct, >=90% completion and the manual conversation/research checks passed. Otherwise fail or incomplete; no automatic model promotion.
+
+This is a new protocol, not directly comparable to prior score weights. Display previous scores separately with their original dates. No confidence about public readiness follows from these small samples. All failed attempts remain evidence. No GPU measurements, power, costs, tokens or utilization may be invented. Missing telemetry is unavailable. Performance is measured through the production API with an administrator test credential, not ordinary-account quota testing. Shared traffic and queueing affect latency. No forced cold starts; the repeated arithmetic prompt is not a controlled warm/cold benchmark.
+
+Evaluator correction before grading: discount-tax expected final total corrected from 126.31 to 126.32 (128.80 × .875 × 1.08 + 4.60 = 126.316). Prompt is unchanged; no model reruns or selective deletions. Record this erratum in public methods.
+
+No image/video generation, weight changes, unlocks or training. Four concurrent backend groups, sequential requests within each group. First attempt limit 360 seconds, subsequent 120 seconds. Stop a model after access rejection or two consecutive incomplete/transport failures; untouched prompts are not fabricated failures. Preserve that limitation visibly.
+
+## Local platform regression run
+161 tests: 159 passed, 2 failed, 0 skipped. Document fixture parsing lacked a FILE_PYTHON runtime with pinned parser dependencies; XML knowledge import lacked defusedxml. These local environment failures were retained; the result does not establish deployment failure or deployment success. No tests were disabled.
+
+## Manual-review interpretation
+The conversation prompt requests two supportive sentences and one practical next step; a separate next-step sentence is allowed. This wording is ambiguous about total sentence count, so no penalty is assigned solely for a third sentence containing the step. Apply this interpretation to every model. Research review checks factual correctness and the MDN citation (independently verified at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes). A citation alone is not proof of live retrieval. Per-request retrieval provenance was not exposed by this chat stream.
+
+## Report verification
+Scoring/reference tests: 7 passed. Public-artifact integrity/privacy checks: 4 passed. Archive server and existing evidence tests: 7 passed. These are separate suites from the 161-test local RailCode run; repeated executions are not counted as new tests. The local working tree includes ongoing development changes, so its unit tests do not certify the exact deployed commit. No production code was modified to improve benchmark answers.
+
+CPU_USAGE is measured in vCPU; MEMORY_USAGE_GB and DISK_USAGE_GB are GB; network series are Railway-reported GB for the selected averaging windows, not an inferred total bill. Token rates use provider-reported generation duration when available, not total wall time. No tokens-per-second value is fabricated for unavailable duration telemetry.
+
+Format-only diagnostics are shown separately: JSON inside a Markdown fence can contain the right answer while failing the explicit JSON-only requirement. This diagnostic does not change the frozen strict score. The score is not a pure factual-accuracy percentage.
+
+## Coverage boundaries
+One attempt per question and model (plus one repeated arithmetic prompt), not repeated statistical trials. Coding checks are small code-tracing/boundary questions, not a software-engineering benchmark or live autonomous editing test. The longer context exercise contains 70 synthetic records; it does not test the full advertised context window. The legal exercise tests a fictional source boundary, not real legal advice. This run excludes image/video generation, speech quality, GPU training, saturation load and destructive security testing. These exclusions remain visible rather than calling this exhaustive certification.
+
+## Who scored this
+The tested models did not grade themselves. Closed-answer results were computed by a separate deterministic evaluator against the published answer keys. Conversation and source checks were reviewed by the coding assistant against the stated rubric; this is assistant review, not a claim of independent human audit.
+
+## Request settings
+Requests asked for temperature 0, think=false and a 160-token output budget (256 for the two open-answer checks). The deployed gateway may apply its own model budgets. Results describe this hosted configuration, not the maximum capability of an upstream model with extended reasoning. Final-answer content was captured; private thinking streams were neither scored nor published. JSON number-versus-string and array-shape differences are strict schema failures and should not be read as proof of incorrect underlying knowledge.
+
+Median request duration includes all attempts, including failed requests; it is not a median of successful answers alone. Time-to-first-text includes only responses that emitted final-answer text. Medians average the two central values for an even sample count; P95 uses nearest rank. Input-token counts include gateway context and retrieved excerpts where those were supplied.
+
+These results evaluate the complete hosted route, including gateway instructions and supplied reference context. They do not isolate the base model. Product version labels come from the live catalog; this run is not a cryptographic audit of model weights. Off-topic material in a response is recorded as a relevance problem without asserting an unverified root cause.
+
+A completed user-facing attempt requires a nonempty final-answer text as well as a successful stream completion without an error or output-length stop. A bare end-of-stream marker is not treated as a usable answer.
+
+Published response text is sanitized for internal identifiers, addresses, source-model labels and unapproved external addresses. The private original records are retained. Sanitization does not change the published reference answers or strict scoring results; the reproducibility check verifies this for closed-answer cases.
+
+## Publication UI checks
+The new Fleet audit tab was tested in the existing journal, including Home/End keyboard navigation, all 33 scorecards, and a 390-pixel viewport with no horizontal overflow. Two existing publication tests were rerun after the tab change and passed; these are repeat executions, not two additional unique platform checks. The full standalone report also passed filtering, expansion, reading-level and resource-selection browser checks.
+
+
+# Findings from the hosted-system screen
+
+This run tests ThunderLink as served through its gateway, including instructions and supplied reference context. It does not isolate or rank underlying model weights.
+
+* **Availability and quality are separate.** Several catalog entries returned backend connection errors. Their unrun questions are not invented failures, and they receive no unsupported capability score. A catalog entry alone is not evidence that a route is ready.
+* **Short answers can still take a long time.** The recorded provider timing separates prompt processing from output generation. Some early requests took more than two minutes despite asking for a tiny answer. Token-generation speed alone is an incomplete description of the user experience.
+* **Correct explanations can cite the wrong source.** Tremor and Tempest explained a JavaScript boolean result but cited Scribd rather than the requested MDN page. Wildfire named MDN while linking a third-party cheatsheet. These fail the source-specific check. A plausible URL is not proof of live retrieval.
+* **Context must remain relevant.** Wildfire introduced an unrelated chemistry/mathematics analogy into a request for encouragement about debugging. That is an observed relevance problem; this test does not establish its exact root cause.
+* **Reasoning errors remain visible.** Downburst returned incorrect results for the discount/tax calculation and conditional probability. The full prompts and reference answers are published. Its earlier score came from another protocol and does not make these new answers correct.
+* **Schema compliance matters, but is not the same as factual knowledge.** Correct JSON wrapped in forbidden Markdown is identified separately. Number/string and array-shape mismatches are also visible in the reference comparison. The /100 score is a strict answer-and-format screen, not a pure factual-accuracy percentage.
+
+For future development, investigate retrieval relevance and official-source selection, evaluate context-size costs, enforce structured-output validation where tools need it, and compare changes on fresh held-out prompts. Do not tune on these now-public cases and present the resulting improvement as unseen-test performance.
+
+No release settings were changed by this audit. A passing score on a small screen would still not establish broad public suitability, expert legal competence, or autonomous coding reliability. The report keeps completion, correctness, relevance, latency, and telemetry gaps visible rather than claiming a universal quality rating.
+
+
+### Resource coverage
+
+84 service aliases inventoried. CPU, memory, disk and network use are Railway averaged service measurements over the indicated window, including other production traffic. They are not isolated per-prompt costs. GPU telemetry is unavailable. Provider token counts and generation durations appear only when returned; missing data is not zero.
+
+All public evidence uses ThunderLink names, synthetic prompts and anonymous service aliases. Infrastructure identifiers, credentials, private logs and user content are excluded.
+
+### Local platform checks
+
+159 passed; 2 failed in the local dependency environment. This is not a deployed end-to-end certification.
+
+<details><summary>All 161 local checks</summary>
+
+| Check | Outcome | Milliseconds |
+|---|---|---:|
+| password hashes are salted and reject incorrect passwords | PASS | 1751.4703 |
+| activity uses observed phases without saving model reasoning or inventing tool execution | PASS | 2.2841 |
+| stopped and failed states persist and malformed history stays ordinary text | PASS | 0.3574 |
+| Railway password requires an allowlisted owner and preserves sessions on unchanged deployments | PASS | 26.4674 |
+| admin authorization, protected owners, validation, and model locks | PASS | 70.5458 |
+| comparison uses identical evidence with no tools, records failure and timing separately | PASS | 44.7358 |
+| desktop cloud proxy permits only bounded fixed task routes | PASS | 13.9045 |
+| comparison accepts permitted conversation models without granting agent tools | PASS | 58.48 |
+| conversation context excludes privileged roles, metadata and excessive history | PASS | 19.3011 |
+| context retention preserves instructions and complete latest tool transactions | PASS | 0.6164 |
+| oversized protected request and latest observation fail instead of silently losing them | PASS | 1.4798 |
+| runtime can finish after older tool results exceed budget without replaying tools | PASS | 5.2242 |
+| agent continuation loads only owner-scoped saved messages and ignores client config | PASS | 98.1374 |
+| agent details remain owner scoped and admission errors preserve their status | PASS | 75.0802 |
+| agent checks revocation between two tools and bounds model context | PASS | 2.0879 |
+| ordinary roles cannot access agent endpoints or self-assert owner privileges | PASS | 0.9115 |
+| plan snapshots bind the completed immutable text and never grant tools | PASS | 20.7201 |
+| web plan worker opens no connections and rejects model-invented tools | PASS | 54.638 |
+| plan execution requires owner access, matching digest and current connection permissions | PASS | 2.2556 |
+| research preserves bounded source excerpts, rejects invalid queries and reports missing evidence | PASS | 20.685 |
+| identity removes client system overrides and accurately describes chat and agent access | PASS | 7.4973 |
+| agent executes an allowed tool, feeds its result back, and reports real progress | PASS | 4.4318 |
+| agent rejects invented tools, revoked permissions, and aborted tasks without execution | PASS | 1.4637 |
+| agent loop stops at its configured limit | PASS | 0.6156 |
+| MCP validates configuration, completes handshake, and validates tool arguments | PASS | 2566.2758 |
+| agent API denies signed-out users before accessing task data | PASS | 17.4813 |
+| Auto classifies intent and ranks metadata independently of names | PASS | 8.3554 |
+| Auto bounds whole history and rejects oversized latest messages | PASS | 0.9706 |
+| inventory isolates failed workers, caches shared probes and bounds concurrency | PASS | 109.1982 |
+| Auto falls back before output, sanitizes events, and records real chosen model | PASS | 31.915 |
+| Auto never retries after content or private reasoning begins | PASS | 2.3034 |
+| Auto retries empty replies but never announces a false completion | PASS | 1.1683 |
+| Auto has three-attempt ceiling and respects revocation, cancellation and first-response deadline | PASS | 21.6834 |
+| Auto account route enforces ownership, quota, locks, private context and telemetry | PASS | 189.5038 |
+| Auto image attachments require a permitted vision model and reach only that model | PASS | 1.9765 |
+| coding questions stay in chat with coding-capable model routing and no execution tools | PASS | 14.0182 |
+| conversation mode validates role and keeps agent execution out of chat | PASS | 13.9755 |
+| plan is non-executing and research describes actual evidence coverage | PASS | 1.0632 |
+| one account can run separate conversations and stop only the selected chat | PASS | 24.1186 |
+| disconnect releases ownership before accounting and old cleanup cannot remove replacement | PASS | 0.4214 |
+| account recovery cannot cancel another account | PASS | 0.565 |
+| Ask, Plan and Review expose only validated read tools and omit credentials | PASS | 50.3207 |
+| Code writes require approval and recheck the file after approval | PASS | 87.2572 |
+| Unsaved editor drafts cannot be overwritten and patch context cannot drift | PASS | 10.7921 |
+| Approvals are single-use and cancellation rejects pending work | PASS | 1.321 |
+| Invalid generated tool arguments get one bounded correction without executing tools | PASS | 0.7081 |
+| Commands recheck drafts after approval and refresh the workspace after execution | PASS | 1749.2145 |
+| Real validation commands return exit status, bounded output, timeout and cancellation | PASS | 2475.464 |
+| Desktop task uses the shared loop to inspect, approve, edit and finish with persisted progress | PASS | 122.6661 |
+| Desktop approved plan is included while write approvals remain mandatory | PASS | 17.0226 |
+| desktop asset protocol exposes UI assets, never main-process files or arbitrary disk paths | PASS | 2.1958 |
+| Coding inference requires an account, a permitted installed model and fixed server tool definitions | PASS | 52.1576 |
+| Coding gateway rejects mode escalation, invented tool history and malformed arguments | PASS | 0.8958 |
+| desktop coding catalog uses the owner-published model version | PASS | 0.5 |
+| Index finds symbols, frameworks, tests and focused context in a substantial repository | PASS | 2018.2327 |
+| Index and retrieval omit ignored, linked, protected and credential-bearing files | PASS | 251.9379 |
+| Real JSON LSP diagnoses malformed content, clears corrected diagnostics and denies external schemas | PASS | 1607.4851 |
+| Developer releases publish atomically, reject corrupt and old versions, and enforce download roles | PASS | 74.0859 |
+| Desktop update policy uses numeric versions and validates minimum supported release | PASS | 0.5897 |
+| Task revert preserves pre-existing modifications and refuses later user edits | PASS | 1692.4377 |
+| Checkpoints persist created/deleted files and prototype-like filenames safely | PASS | 492.7682 |
+| Command checkpoints capture eligible changes even when execution fails | PASS | 500.1783 |
+| Git review stages exact files, commits, inspects history and switches only clean trees | PASS | 5397.354 |
+| Git approval is single-use and refuses disk changes during approval | PASS | 765.46 |
+| Checkpoint edits reject non-UTF8 bytes instead of corrupting rollback contents | PASS | 350.1449 |
+| Reverting agent content leaves the pre-existing Git index untouched | PASS | 467.5016 |
+| Interrupted checkpoint blocks more writes and automatic revert | PASS | 358.5916 |
+| Git review discovers and stages new files inside new directories | PASS | 989.0608 |
+| Code workspace rejects traversal, Windows aliases, secrets and junctions | PASS | 13.1454 |
+| Code file lifecycle protects concurrent edits, hard links, nonempty folders and binary data | PASS | 77.5783 |
+| Code Git status and diffs inspect actual tracked and untracked changes | PASS | 1906.7516 |
+| Code state atomically restores projects, tabs, drafts, conversations and settings | PASS | 28.4652 |
+| untrusted schema validation cannot block the gateway event loop | PASS | 2361.4384 |
+| connection destinations reject private, metadata, credential and URL tricks | PASS | 22.5489 |
+| connection credentials use authenticated owner-bound encryption | PASS | 3.8025 |
+| configuration import previews remote URLs without executing code or importing credentials | PASS | 134.3014 |
+| OAuth credentials are issuer-bound and noninteractive tasks cannot initiate consent | PASS | 0.9119 |
+| personal MCP discovers tools, grants only selected tools, and validates arguments | PASS | 252.2474 |
+| tool execution waits for approval and rechecks authorization afterwards | PASS | 3.4053 |
+| OAuth discovery, PKCE redirect and code exchange survive a provider restart | PASS | 12.1982 |
+| inference honors explicit threads without exceeding host or container CPU quota | PASS | 3.1129 |
+| developer keys fail closed on role, scope, writes and unknown endpoints | PASS | 12.8856 |
+| Downburst public evidence retains all answers and failed gates without mixing score rubrics | PASS | 38.4522 |
+| Downburst publication projects tool data and removes private fields before serving | PASS | 61.0479 |
+| file validation rejects mismatches, binary text, oversized data and unsafe names | PASS | 6.8222 |
+| retrieval bounds file context and prefers relevant chunks, never changes message roles | PASS | 1.6424 |
+| file context checks ownership, conversation scope, IDs and image count | PASS | 30.9886 |
+| file HTTP API enforces account ownership, private download headers, validation and deletion | PASS | 154.8351 |
+| bounded Python parsers handle real PDF, DOCX and PNG fixtures and reject invalid archives | FAIL | 0.9514 |
+| gateway authenticates requests and supports model install and chat | PASS | 2614.2659 |
+| guest cookies reject fabricated and tampered identities | PASS | 63.1231 |
+| guest gateway allows only the basic model and five messages, with persistent quota and private routing | PASS | 215.4536 |
+| federation queries each configured collection, balances results and survives an unavailable node | PASS | 49.0942 |
+| federated administration targets one node and never exposes credentials | PASS | 2.4994 |
+| publisher mirror is restricted to its Kiwix archive directory | PASS | 202.3026 |
+| ZIM registration renames the verified staging file without retaining another archive | PASS | 16.5241 |
+| topic relevance favors named subjects over incidental court metadata | PASS | 6.5997 |
+| supplied-only questions avoid retrieval and scientific queries exclude incidental court cases | PASS | 13.4921 |
+| prepared uploads enforce size, ordered bounded chunks, checksum, and exclusive reservations | PASS | 35.3815 |
+| knowledge imports real XML into searchable persistent passages, retains source metadata and rejects unsafe URLs | FAIL | 1306.3777 |
+| knowledge excerpts remain data, preserve the latest question and are bounded | PASS | 8.297 |
+| model research persists revision alerts, screens file sizes and denies ordinary roles | PASS | 16.751 |
+| Thunder Law previews enforce developer access independently of model access rows | PASS | 10.7888 |
+| shared gateway supplies live evidence without requiring native model tools | PASS | 35.0798 |
+| live research sends only eligible latest queries and excludes common secrets | PASS | 0.5967 |
+| research validates endpoint, authenticates upstream, and bounds evidence | PASS | 1.2515 |
+| public media only proxies fixed approved files and never returns upstream credentials | PASS | 36.3825 |
+| public media reports use ThunderLink names and keep provenance separate | PASS | 425.9501 |
+| media evidence keeps execution distinct from reviewed quality and excludes operational fields | PASS | 0.6061 |
+| media tab preserves the other publication tabs and uses safe DOM rendering | PASS | 1.3465 |
+| memory validation bounds explicit facts and rejects invalid revisions | PASS | 6.3817 |
+| memory retrieval respects opt-out, relevance, count and context limits without elevating user content | PASS | 34.5459 |
+| memory API denies internal/guest access, validates writes, scopes owners and requires clear-all confirmation | PASS | 102.3777 |
+| Auto selects relevant memory and rechecks opt-out before a fallback attempt | PASS | 23.0551 |
+| runtime supplies public model purposes without unsolicited provider attribution | PASS | 2.8898 |
+| all qualified fleet models receive their own version and purpose in each environment | PASS | 2.0245 |
+| agent retains supplied lineup during inference | PASS | 2.288 |
+| model resource budgets preserve defaults and reject unsafe configuration | PASS | 12.5232 |
+| reference context and prompt remain a single user turn without privilege promotion | PASS | 4.3903 |
+| tool calls and results retain their exact ordering and fields | PASS | 0.4476 |
+| merging image context retains both attachments without mutating history | PASS | 1.1887 |
+| normalization is idempotent and never merges tool result messages | PASS | 0.3804 |
+| release state overrides availability, supports explicit release, and preserves version labels | PASS | 3.6749 |
+| only owners can persist release settings; validation and task cancellation enforced | PASS | 10.1107 |
+| FIFO positions, cancellation, independent providers and idempotent release | PASS | 7.434 |
+| bounded queues reject overflow and expire without occupying a slot | PASS | 27.0318 |
+| account occupancy spans conversations and cancellation releases it | PASS | 1.0298 |
+| activity exposes updated queue positions and clears them on admission | PASS | 1.9283 |
+| training availability is owner-controlled, independently reversible and includes Auto | PASS | 12.9729 |
+| Auto lock rejects before quota, routing or model calls | PASS | 10.9493 |
+| training state persists separately and audit is transactional | PASS | 1.2121 |
+| curated model names accept version dots but reject arbitrary URLs | PASS | 182.1622 |
+| meter preserves split UTF-8 and uses only counts reported by the model | PASS | 170.4476 |
+| role policy defaults open but explicit role lists reject all other roles | PASS | 7.9469 |
+| Railway logs redact known secrets and common credential forms | PASS | 17.7384 |
+| operations endpoints reject ordinary accounts before reading private data | PASS | 1.1091 |
+| desktop actions require recent observations and bounded targets | PASS | 2.6344 |
+| preview chat rejects before retrieval or inference while other models still route | PASS | 1516.6364 |
+| profile validation bounds fields, excludes privilege fields, and keeps preferences below system identity | PASS | 4.2881 |
+| personal MCP tasks require owned enabled connections and ignore operator credentials | PASS | 60.3899 |
+| an open page picks up a developer assignment and exposes manual retry on failure | PASS | 24.3172 |
+| preview invitation follows server permission and clears when access changes | PASS | 1.9145 |
+| accounts await role loading before requesting/rendering rows | PASS | 26.5814 |
+| PWA service worker never intercepts private API requests and falls back offline for navigation | PASS | 17.5434 |
+| search capability is distinguished from successful retrieval without mutating history | PASS | 17.2847 |
+| research publication has matching tabs, safe text rendering and public allowlisted routes | PASS | 24.1184 |
+| research evidence preserves every model and reviewed answer without operational details | PASS | 20.8532 |
+| Safari reader-only streams preserve split Unicode and completed replies | PASS | 2.7043 |
+| reader failures cancel the network stream and release its lock | PASS | 2.1333 |
+| stream decoder preserves split UTF-8, tool calls, and detects interrupted responses | PASS | 40.8753 |
+| gateway streams early events through private workers and bounds CPU threads | PASS | 1683.153 |
+| training lab uses public pilot branding in the page and evidence export | PASS | 21.7572 |
+| public evidence export rejects operational fields and redacts addresses, identities and credentials | PASS | 5.199 |
+| published scorecard preserves failures, unavailable scores and independent training comparisons | PASS | 23.8042 |
+| benchmark archive is public while private reports and source manifests remain inaccessible | PASS | 1446.0633 |
+| project boundaries and reviewed edits | PASS | 20.7166 |
+| audio worklet maintains resampling phase across hardware buffers | PASS | 129.4324 |
+| voice gateway requires accounts, keeps worker credentials private and bounds uploads | PASS | 64.3075 |
+| voice gateway rejects overlapping requests and does not expose upstream errors | PASS | 4.0296 |
+| skill imports are pinned, text-only, bounded and retain license provenance | PASS | 38.4941 |
+| library routes enforce developer access and validate size before saving | PASS | 1.0435 |
+
+</details>
